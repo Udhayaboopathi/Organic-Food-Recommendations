@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organic Food Recommendations</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🍽️ Organic Food Recommendations</h1>
+      <label for="problemInput">Enter Health Problem:</label>
+      <input type="text" id="problemInput" placeholder="Enter health problem" />
+      <button onclick="getRecommendations()">Get Recommendations</button>
+
+      <!-- Display Recommendations -->
+      <div id="resultContainer"></div>
+    </div>
+  </body>
+</html>
